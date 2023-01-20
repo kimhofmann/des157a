@@ -1,0 +1,31 @@
+body {
+    font-family: Hack, monospace;
+    background-color: #282c34;
+    color: #aab1be;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sec1 h2{
+    color: #e06b75;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.ab {
+    color:#aab1be;
+}
+
+.sub {
+    color: #cd9664;
+}
+
+.subofsub {
+    color: #8fb774;
+}
+
+.titles {
+    color:#e06b75;
+}
