@@ -20,6 +20,11 @@ a:hover {
 
 header {
     display: flex;
+    justify-content: space-around;
+}
+
+.banner {
+    margin-right: 10px;
 }
 
 header h1, h2{
@@ -31,33 +36,31 @@ header h1, h2{
 
 main {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .sec1 {
     background-color: #282c34;
-    height: 340px;
+    height: 400px;
     padding: 20px;
-    margin-right: 5px;
 
     
 }
 
 .sec2 {
     background-color: #282c34;
-    height: 340px;
+    height: 400px;
     padding: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+
     
 }
 
 .sec3 {
     background-color: #282c34;
-    height: 340px;
+    height: 400px;
     padding: 20px;
-    margin-left: 5px;
+
 }
 
 .sec1 h1 {
