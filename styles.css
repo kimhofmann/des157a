@@ -64,12 +64,20 @@ main {
     align-items: center;
 }
 
+footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
 .sec1 {
     background-color: #282c34;
     height: 400px;
     padding-left: 50px;
-    padding-top: 30px
-
+    padding-top: 30px;
+    box-shadow: 4px 4px #55b4bf;
+    border-radius: 15px 0px 0px 50px;
     
 }
 
@@ -79,6 +87,7 @@ main {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
+    box-shadow: 4px 4px #55b4bf;
 
 
     
@@ -89,6 +98,8 @@ main {
     height: 400px;
     padding-right: 150px;
     padding-top: 30px;
+    box-shadow: 4px 4px #55b4bf;
+    border-radius: 0px 50px 15px 0px;
 
 
 }
@@ -161,60 +172,27 @@ main {
     color: #c678dd;
 }
 
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-		transform: scale(0.6);
-	}
-
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
+.flavortext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 30px;
 }
 
-@keyframes bounce {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 1;
-		transform: translateY(-45px);
-	}
-
-	24% {
-		opacity: 1;
-	}
-
-	40% {
-		animation-timing-function: ease-in;
-		transform: translateY(-24px);
-	}
-
-	65% {
-		animation-timing-function: ease-in;
-		transform: translateY(-12px);
-	}
-
-	82% {
-		animation-timing-function: ease-in;
-		transform: translateY(-6px);
-	}
-
-	93% {
-		animation-timing-function: ease-in;
-		transform: translateY(-4px);
-	}
-
-	25%,
-	55%,
-	75%,
-	87% {
-		animation-timing-function: ease-out;
-		transform: translateY(0px);
-	}
-
-	100% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0px);
-	}
-}
+.skew-tutorial{
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform-origin: 0 100%;
+    padding-bottom: 2px;
+  }
+  .skew-tutorial:hover, .skew-tutorial:focus, .skew-tutorial:active {
+    transform: skew(-10deg);
+    color: #cd9664;
+  }
+  
