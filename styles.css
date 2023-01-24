@@ -1,8 +1,8 @@
 body {
     font-family: Hack, monospace;
-    background-color: #1b1e23;
+    background-color: #1b1f22;
     color: #aab1be;
-    animation: fadeIn 3s ease-in-out 0s 1 normal forwards;
+
 }
 
 ul {
@@ -11,39 +11,64 @@ ul {
 }
 a {
     color: #aab1be;
+    transition: color 0.5s, font-size 0.5s;
 }
 
 a:hover {
-    animation: bounce 2s ease 0s infinite normal forwards;
+    font-size: 1.1em;
 }
 
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
 }
 
-.banner {
-    margin-right: 10px;
-}
+#banner h1 {
+    
+    overflow: hidden; 
+    border-right: .15em solid #8fb774; 
+    white-space: nowrap; 
+    margin: 0 auto;
+    padding-left: 20px;
+    letter-spacing: .20em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #8fb774; }
+  }
 
 header h1, h2{
     display: block;
     font-weight: normal;
-    font-size: 1.3em;
+    font-size: 1.25em;
+    padding-left: 20px;
+    margin-right: 55px;
 
 }
 
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
 .sec1 {
     background-color: #282c34;
     height: 400px;
-    padding: 20px;
+    padding-left: 50px;
+    padding-top: 30px
 
     
 }
@@ -51,7 +76,10 @@ main {
 .sec2 {
     background-color: #282c34;
     height: 400px;
-    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+
 
     
 }
@@ -59,7 +87,9 @@ main {
 .sec3 {
     background-color: #282c34;
     height: 400px;
-    padding: 20px;
+    padding-right: 150px;
+    padding-top: 30px;
+
 
 }
 
