@@ -189,7 +189,7 @@ footer {
     transition-duration: 0.3s;
     transition-property: transform;
     transform-origin: 0 100%;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
   }
   .skew-tutorial:hover, .skew-tutorial:focus, .skew-tutorial:active {
     transform: skew(-10deg);

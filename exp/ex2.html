@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var colorInput = prompt("Pick a color of the rainbow.").toLowerCase();
+
+        function changeColor() {
+            if (colorInput === "red") {
+                document.body.style.backgroundColor = "red";
+            } else if (colorInput === "orange") {
+                document.body.style.backgroundColor = "orange";
+            } else if (colorInput === "yellow") {
+                document.body.style.backgroundColor = "yellow";
+            } else if (colorInput === "green") {
+                document.body.style.backgroundColor = "green";
+            } else if (colorInput === "blue") {
+                document.body.style.backgroundColor = "blue";
+            } else if (colorInput === "purple") {
+                document.body.style.backgroundColor = "purple";
+            } else {
+                alert("You didn't pick one of the colors of the rainbow")
+            }
+        }
+
+        changeColor('colorInput')
+
+    </script>
+
+   <!-- The code takes the input from the prompt, and checks through the list for matching names, then displays that color as the background color -->
+
+</body>
+</html>
