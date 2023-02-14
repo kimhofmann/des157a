@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>a resignation generator</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
    
@@ -16,23 +17,38 @@
 
 
    <div class="form">
-   <form>
+   <form id="myform">
         <label for="bname">Boss' Name</label>
-        <input type="text" id="bname" name="bname"><br>
+        <input type="text" id="bname"><br>
+
         <label for="aadj">Angry Adjective</label>
-        <input type="text" id="aadj" name="aadj"><br>
+        <input type="text" id="aadj"><br>
+
         <label for="cname">Company Name</label>
-        <input type="text" id="cname" name="cname"><br>
+        <input type="text" id="cname"><br>
+
         <label for="hadj">Happy Adjective</label>
-        <input type="text" id="hadj" name="hadj"><br>
+        <input type="text" id="hadj"><br>
+
         <label for="djob">Dream Job</label>
-        <input type="text" id="djob" name="djob"><br>
+        <input type="text" id="djob"><br>
+
         <label for="excl">Exclamation</label>
-        <input type="text" id="excl" name="excl"><br>
+        <input type="text" id="excl"><br>
+
         <label for="fname">Your Name</label>
-        <input type="text" id="fname" name="fname"><br>
-        <input type="submit" id="submit" value="SEND IT!"><br>
+        <input type="text" id="fname"><br>
+
+        <input type="submit" class="open" value="SEND IT!"><br>
    </form>
     </div>
+    <div id="overlay" class="hidden">
+    <section>
+        <h2> TO: myshittyboss@myjob.com</h2>
+        <h2> SUBJECT: I QUIT!!!</h2>
+        <article id="madlib"></>
+    </section>
+    </div>
+
 </body>
 </html>

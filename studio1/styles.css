@@ -10,7 +10,7 @@ header {
     margin-bottom: 20px;
 }
 
-h1 {
+header h1 {
     color: #f1f0ec;
     display: block;
     font-weight: normal;
@@ -19,7 +19,7 @@ h1 {
 
 }
 
-h2 {
+header h2 {
 
     color: #f1f0ec;
     display: block;
@@ -29,7 +29,7 @@ h2 {
 
 }
 
-div {
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,3 +58,55 @@ input[type=submit] {
 
 }
 
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1.2s;
+    transition-timing-function: ease;
+
+}
+
+#overlay h2 {
+    font-size: 18px;
+    font-weight: normal;
+    background-color: #f3f3f3;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+#overlay section {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#overlay article {
+    padding: 20px;
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+}
