@@ -8,8 +8,6 @@
 
     form.addEventListener("submit", function(event){
         event.preventDefault();
-        //formsValue = document.querySelector("input").value;
-        //console.log(formsValue);
 
         const bname = document.getElementById('bname').value;
         const aadj = document.getElementById('aadj').value;
@@ -29,12 +27,18 @@
         All the worst and ${excl},<br>
         ${fname}`;
 
-        article.innerHTML = myText;
+        madl.innerHTML = myText;
     });
 
     document.querySelector('.open').addEventListener('click', function(event){
         event.preventDefault();
         document.getElementById('overlay').className = 'showing';
+    });
+
+    document.addEventListener('keydown', function(event){
+        if (event.key === 'escape') {
+            document.getElementById('overlay').className = 'hidden';
+        }
     });
 
 

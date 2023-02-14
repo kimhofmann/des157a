@@ -86,7 +86,11 @@ input[type=submit] {
     font-weight: normal;
     background-color: #f3f3f3;
     padding: 2px;
-    margin-left: 5px;
+    padding-left: 5px;
+	border: solid #BDBDBD 1px; 
+	box-shadow: -11px -10px 12px rgba(0, 0, 0, 0.1) inset; 
+	-webkit-box-shadow: -11px -10px 12px rgba(0, 0, 0, 0.1) inset; 
+	-moz-box-shadow: -11px -10px 12px rgba(0, 0, 0, 0.1) inset; 
 }
 
 #overlay section {
