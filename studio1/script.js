@@ -17,13 +17,13 @@
         const fname = document.getElementById('fname').value;
 
         
-        const text = `<p> Dear ${bname}, <br>
+        const text = `<p> Dear <u>${bname}</u>, <br>
         <br>
-        I hope this email does not find you well. In all honesty, my time working for you has been ${aadj} to say the least. I literally cannot find a single fuck to give any longer, and will be pleased to leave my position at ${cname}. Over the past six years, I have never been more ${hadj} to know that I will no longer have to listen to your incessant whining while you sit around making three times my salary.  I will finally be able to pursue my dream of becoming a ${djob}, a dream driven by my burning desire to get away from you. <br>
+        I hope this email does not find you well. In all honesty, my time working for you has been <u>${aadj}</u> to say the least. I literally cannot find a single fuck to give any longer, and will be pleased to leave my position at <u>${cname}</u>. Over the past six years, I have never been more <u>${hadj}</u> to know that I will no longer have to listen to your incessant whining while you sit around making three times my salary.  I will finally be able to pursue my dream of becoming a <u>${djob}</u>, a dream driven by my burning desire to get away from you. <br>
         <br>
         <br>
-        All the worst and ${excl},<br>
-        ${fname} </p>`;
+        All the worst and <u>${excl}</u>,<br>
+        <u>${fname}</u> </p>`;
         
         madl.innerHTML = text;
         console.log(text)

@@ -87,7 +87,7 @@ input[type=submit] {
 #overlay {
     position: absolute;
     background-color: rgba(0,0,0,0.5);
-    border: solid #BDBDBD 1px; 
+    border: solid black 2px; 
     top: 0;
     left: 0;
     width: 100vw;
@@ -104,8 +104,8 @@ input[type=submit] {
     background-color: #f3f3f3;
     padding: 2px;
     padding-left: 5px;
-	border: solid #BDBDBD 1px; 
-	box-shadow: -11px -10px 12px rgba(0, 0, 0, 0.1) inset; 
+	border: solid #535353 1px; 
+	box-shadow: -11px -10px 12px rgba(196, 196, 196, 0.1) inset; 
 	-webkit-box-shadow: -11px -10px 12px rgba(0, 0, 0, 0.1) inset; 
 	-moz-box-shadow: -11px -10px 12px rgba(0, 0, 0, 0.1) inset; 
 }
@@ -113,6 +113,7 @@ input[type=submit] {
 #overlay section {
     box-sizing: border-box;
     background-color: #fff;
+    border: solid black 2px; 
     padding: 20px;
     width: 90vw;
     height: 60vh;
