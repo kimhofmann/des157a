@@ -162,4 +162,7 @@ article p {
     color: #c678dd;
 }
 
-  
+img {
+    justify-content: space-between;
+    padding: 10px;
+}
