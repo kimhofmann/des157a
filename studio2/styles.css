@@ -1,0 +1,110 @@
+body {
+    background-color:black;
+    color: white;
+}
+
+header {
+    display: flex;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: auto;
+}
+
+
+main {
+    display: flex;
+    max-width:fit-content;
+    margin: auto;
+    background-color: black;
+}
+
+img {
+    transition: transform .2;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 20px;
+    margin: auto;
+
+}
+
+img:hover {
+    transform: scale(1.05)
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show {
+    visibility: visible;
+    opacity: 100;
+}
+
+#overlay1 {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    border: solid rgb(255, 0, 170) 2px; 
+    top: 100px;
+    left: 150px;
+    width: 75vw;
+    height: 75vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1.2s;
+    transition-timing-function: ease;
+}
+
+#overlay2 {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    border: solid rgb(255, 0, 170) 2px; 
+    top: 100px;
+    left: 150px;
+    width: 75vw;
+    height: 75vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1.2s;
+    transition-timing-function: ease;
+}
+
+#overlay3 {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    border: solid rgb(255, 0, 170) 2px; 
+    top: 100px;
+    left: 150px;
+    width: 75vw;
+    height: 75vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1.2s;
+    transition-timing-function: ease;
+}
+
+#overlay4 {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    border: solid rgb(255, 0, 170) 2px; 
+    top: 100px;
+    left: 150px;
+    width: 75vw;
+    height: 75vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1.2s;
+    transition-timing-function: ease;
+}
+
+#overlay5 {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    border: solid rgb(255, 0, 170) 2px; 
+    top: 100px;
+    left: 150px;
+    width: 75vw;
+    height: 75vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1.2s;
+    transition-timing-function: ease;
+}
