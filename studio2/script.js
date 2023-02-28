@@ -8,6 +8,8 @@
     const acowar = document.querySelector("#overlay3");
     const acofas = document.querySelector("#overlay4");
     const acosf = document.querySelector("#overlay5");
+    const btn = document.querySelectorAll('#btn')
+    
 
 
     document.querySelector("#acotar").addEventListener("click", function(event){
@@ -56,11 +58,11 @@
     });
 
 
-    document.addEventListener('keydown', function(event){
-        if (event.key === 'Escape') {
-            document.querySelectorAll(`#overlay1, #overlay2, #overlay3, #overlay4, #overlay5`).className = 'hidden';
-        }
+    btn.addEventListener("click", function(event){
+        // reload the page
+        window.location.reload()
     });
+
 
  
 })();

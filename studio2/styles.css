@@ -46,65 +46,94 @@ img:hover {
 
 #overlay1 {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    border: solid rgb(255, 0, 170) 2px; 
+    background-image: url(images/acotar.png);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border: solid white 3px;
     top: 100px;
     left: 150px;
     width: 75vw;
     height: 75vh;
     transition-property: opacity, visibility;
-    transition-duration: 1.2s;
+    transition-duration: 2s;
     transition-timing-function: ease;
 }
 
 #overlay2 {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    border: solid rgb(255, 0, 170) 2px; 
+    background-image: url(images/acomaf.png);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border: solid white 3px;
     top: 100px;
     left: 150px;
     width: 75vw;
     height: 75vh;
     transition-property: opacity, visibility;
-    transition-duration: 1.2s;
+    transition-duration: 2s;
     transition-timing-function: ease;
 }
 
 #overlay3 {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    border: solid rgb(255, 0, 170) 2px; 
+    background-image: url(images/acowar.png);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border: solid white 3px;
     top: 100px;
     left: 150px;
     width: 75vw;
     height: 75vh;
     transition-property: opacity, visibility;
-    transition-duration: 1.2s;
+    transition-duration: 2s;
     transition-timing-function: ease;
 }
 
 #overlay4 {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    border: solid rgb(255, 0, 170) 2px; 
+    background-image: url(images/acofas.png);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border: solid white 3px;
     top: 100px;
     left: 150px;
     width: 75vw;
     height: 75vh;
     transition-property: opacity, visibility;
-    transition-duration: 1.2s;
+    transition-duration: 2s;
     transition-timing-function: ease;
 }
 
 #overlay5 {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    border: solid rgb(255, 0, 170) 2px; 
+    background-image: url(images/acosf.png);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border: solid white 3px;
     top: 100px;
     left: 150px;
     width: 75vw;
     height: 75vh;
     transition-property: opacity, visibility;
-    transition-duration: 1.2s;
+    transition-duration: 2s;
     transition-timing-function: ease;
+}
+
+button {
+    background-color: 0;
 }
