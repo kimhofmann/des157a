@@ -13,7 +13,22 @@ header {
 
 h1 {
     font-size: 35px;
+    letter-spacing: .5rem;
     padding-top: 5px;
+    font-weight: normal;
+    margin: auto;
+    color: white;
+    font-family: 'Bebas Neue', cursive;;
+}
+
+footer {
+    display: flex;
+}
+
+p {
+    font-size: 20px;
+    letter-spacing: .2rem;
+    padding-top: 20px;
     font-weight: normal;
     margin: auto;
     color: white;
@@ -28,11 +43,12 @@ main {
 }
 
 img {
-    transition: transform .2;
+    transition: transform .2s;
     padding-left: 1px;
     padding-right: 1px;
     padding-top: 20px;
     margin: auto;
+    height: 650px;
 
 }
 
@@ -47,7 +63,7 @@ img:hover {
 
 .show {
     visibility: visible;
-    opacity: 100;
+    opacity: 1;
 }
 
 #overlay1 {
@@ -141,5 +157,31 @@ img:hover {
 }
 
 button {
-    background-color: 0;
+    display: inline-block;
+    border: none;
+    padding: 1rem 1rem;
+    margin: 0;
+    text-decoration: none;
+    background:rgba(255, 255, 255, 0.4);
+    color: black;
 }
+
+button:hover{
+    background:white;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:white;
+    text-decoration: underline;
+  }
+  
