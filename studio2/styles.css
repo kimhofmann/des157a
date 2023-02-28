@@ -1,6 +1,10 @@
 body {
-    background-color:black;
-    color: white;
+    background-image: url(images/myroom.png);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 header {
@@ -8,9 +12,12 @@ header {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 35px;
+    padding-top: 5px;
     font-weight: normal;
     margin: auto;
+    color: white;
+    font-family: 'Bebas Neue', cursive;;
 }
 
 
@@ -18,7 +25,6 @@ main {
     display: flex;
     max-width:fit-content;
     margin: auto;
-    background-color: black;
 }
 
 img {
