@@ -90,6 +90,16 @@
 			setTimeout(setUpTurn, 3000);
 		}
 
+		// if two 6's are rolled...
+		if( gameData.rollSum === 12 ){ 
+			actionArea.innerHTML += `<p id="warning">ERROR! TOO MUCH DATA! SWAPPING TO ${
+				gameData.players[gameData.index]} </p>`;
+			gameData.score[gameData.index] = 0;
+			gameData.index ? (gameData.index = 0) : (gameData.index = 1);
+			showCurrentScore();
+			setTimeout(setUpTurn, 3000);
+			}
+
 		// if either die is a 1...
 		else if(gameData.roll1 === 1 || gameData.roll2 === 1){ 
 			gameData.index ? (gameData.index = 0) : (gameData.index = 1);
