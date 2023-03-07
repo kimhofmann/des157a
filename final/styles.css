@@ -1,0 +1,168 @@
+body {
+    font-family: Hack, monospace;
+    background-color: #1b1f22;
+    color: #aab1be;
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 50px;
+}
+a {
+    color: #aab1be;
+    padding-left: 50px;
+    transition: color 0.5s, font-size 0.5s;
+}
+
+a:hover {
+    font-size: 1.1em;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+#banner {
+    display: block;
+}
+
+header h1, h2{
+    display: block;
+    font-weight: normal;
+    font-size: 1.25em;
+    padding-left: 20px;
+    margin-right: 55px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+article {
+    background-color: #282c34;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px;
+    box-shadow: 4px 4px #55b4bf;
+    border-radius: 15px 50px 15px 50px;
+    
+}
+
+article h2{
+    color: #e06b75;
+    font-size: 1.3em;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+article date {
+    padding-left: 30px;
+    font-size: 1.2em;
+}
+
+article p {
+
+    padding-left: 40px;
+}
+
+
+.sec2 {
+    background-color: #282c34;
+    height: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    box-shadow: 4px 4px #55b4bf;
+
+
+    
+}
+
+.sec3 {
+    background-color: #282c34;
+    height: 400px;
+    padding-right: 150px;
+    padding-top: 30px;
+    box-shadow: 4px 4px #55b4bf;
+    border-radius: 0px 50px 15px 0px;
+
+
+}
+
+.sec1 h1 {
+    color: #e06b75;
+    font-weight: normal;
+    font-size: 1.2em;
+    
+}
+
+.sec2 h1 {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.sec3 h1 {
+    font-weight: normal;
+    font-size: 1.2em; 
+}
+
+
+
+
+.sec3 h2 {
+    font-size: 1em;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+.ab {
+    color:#aab1be;
+}
+
+.sub {
+    color: #cd9664;
+}
+
+.subofsub {
+    color: #8fb774;
+}
+
+.sub3 {
+    color:#55b4bf;
+}
+
+.titles {
+    color:#e06b75;
+}
+
+.title2 {
+    color: #d29966;
+}
+
+.yellows {
+    color: #f9d105;
+}
+
+.java {
+    color: #c678dd;
+}
+
+img {
+    justify-content: space-between;
+    padding: 10px;
+}
