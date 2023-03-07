@@ -1,55 +1,134 @@
 body {
     font-family: 'Oxanium', cursive;
     background-image: url(images/code.gif);
-    height: 700px; /* You must set a specified height */
+    height: 800px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    background-color: black;
     color: white;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 30px;
     line-height: 1.5em;
 }
 
 button { 
     padding: 10px;
+    background: none;
+    font-weight: bold;
+    color: greenyellow;
+    margin: auto;
 }
 
+
 div {
-    padding: 20px;
+    padding: 0px;
     display: flex;
+    background-color: rgba(0, 0, 0, 0.66);
 }
+
+
 
 img {
     padding: 30px;
 }
 
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#startgame {
+    font-size: 50px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#quit {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+#roll {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#instructions {
+    background-color: rgba(0, 0, 0, 0.66);
+    display: block;
+    padding: 20px;
+}
+
+
 #gamecontrol, #score {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.66);
+    margin: auto;
 }
 
 #score {
     justify-content: space-between;
-    font-size: 40px;
+    font-size: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.green {
+    color: greenyellow;
+    font-weight: bolder;
 }
 
 #game  {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.66);
     font-size: 200px;
-    padding-left: 200px;
-    margin-bottom: 0px;
+    margin: auto;
+    justify-content: center;
+
 }
 
 
 #game img {
-    height: 275px;
-    width: 275px;
+    height: 300px;
+    width: 300px;
+
 }
 #actions {
     margin: auto;
     padding: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.66);
 
 }
+
+#actions p {
+    margin: auto;
+}
+
+#warning {
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+    animation: blinker 1s linear infinite;
+    padding-bottom: 30px;
+}
+
+#success {
+    color: greenyellow;
+    font-size: 60px;
+    padding-bottom: 100px;
+    margin: auto;
+    font-weight: bolder;
+    animation: blinker 1s linear infinite;
+
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+

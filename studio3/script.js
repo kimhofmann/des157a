@@ -14,6 +14,9 @@
 	const warning = document.getElementById('warnings')
 	const score = document.getElementById('score');
 	const actionArea = document.getElementById('actions');
+	const instructions = document.getElementById('instructions')
+	const button = document.querySelectorAll('button')	
+	const audio = new Audio("sounds/high-tec.wav")
 
 	const gameData = {
 		dice: ['images/dice1.png', 'images/dice2.png', 'images/dice3.png', 
@@ -27,11 +30,22 @@
 		gameEnd: 29
 	};
 
+	//bg audio
+	var audioElement = document.getElementById('bgMusic')
+
+	audioElement.addEventListener("canplay", function(evt) {
+		audioElement.volume = ".1";
+	}, false);
+
+
+	//game start
 	startGame.addEventListener('click', function () {
 		gameData.index = Math.round(Math.random());
 		console.log(gameData.index);
-
 		gameControl.innerHTML = '<button id="quit">DISCONNECT</button>';
+		instructions.className = 'hidden'
+		instructions.innerHTML = ''
+		instructions.style.backgroundColor = 'rgba(255, 255, 255, 0)'
 
 		document
 			.getElementById('quit').addEventListener('click', function () {
@@ -41,16 +55,20 @@
 		setUpTurn();
 	});
 
+
+	// turn setup
 	function setUpTurn() {
 		game.innerHTML = `<p>${gameData.players[gameData.index]} START</p>`;
 		actionArea.innerHTML = '<button id="roll">ROLL</button>';
+		instructions.className = 'hidden'
+		instructions.innerHTML = ''
 		document.getElementById('roll').addEventListener('click', function(){
 
 			throwDice();
 
 		});
 	}
-
+	// roll dice
 	function throwDice(){
 		actionArea.innerHTML = '';
 		gameData.roll1 = Math.floor(Math.random() * 6) + 1; //using ceil could result in a zero
@@ -59,28 +77,31 @@
 		game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"> 
 							<img src="${gameData.dice[gameData.roll2-1]}">`;
 		gameData.rollSum = gameData.roll1 + gameData.roll2;
+		instructions.className = 'hidden'
+		instructions.innerHTML = ''
+
 
 		// if two 1's are rolled...
 		if( gameData.rollSum === 2 ){ 
-			actionArea.innerHTML += '<p>ERROR! TWO ONES DETECTED! SHUTTING DOWN!</p>';
+			actionArea.innerHTML += '<p id="warning">ERROR! TWO ONES DETECTED! SHUTTING DOWN!</p>';
 			gameData.score[gameData.index] = 0;
 			gameData.index ? (gameData.index = 0) : (gameData.index = 1);
 			showCurrentScore();
-			setTimeout(setUpTurn, 2000);
+			setTimeout(setUpTurn, 3000);
 		}
 
 		// if either die is a 1...
 		else if(gameData.roll1 === 1 || gameData.roll2 === 1){ 
 			gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-			actionArea.innerHTML += `<p>WARNING ONE DETECTED, SWAPPING TO ${
+			actionArea.innerHTML += `<p id= "warning">WARNING ONE DETECTED, SWAPPING TO ${
 				gameData.players[gameData.index]}</p>`;
-			setTimeout(setUpTurn, 2000);
+			setTimeout(setUpTurn, 3000);
 		}
 
 		// if neither die is a 1...
 		else { 
 			gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-			actionArea.innerHTML = '<button id="rollagain">Roll again</button> or <button id="pass">Give Up</button>';
+			actionArea.innerHTML = '<button id="rollagain">Roll again</button>  <button id="pass">Give Up</button>';
 
 			document.getElementById('rollagain').addEventListener('click', function () {
 				//setUpTurn();
@@ -96,12 +117,13 @@
 		}
 
 	}
-
+	// winner check
 	function checkWinningCondition() {
 		if (gameData.score[gameData.index] > gameData.gameEnd) {
-			score.innerHTML = `<h2>${gameData.players[gameData.index]} 
+			score.innerHTML = `<h2 id="success">${gameData.players[gameData.index]} 
 			SUCCEEDS WITH ${gameData.score[gameData.index]} UNITS</h2>`;
-
+			instructions.className = 'hidden'
+			instructions.innerHTML = ''
 			actionArea.innerHTML = '';
 			document.getElementById('quit').innerHTML = 'NEW GAME';
 		} else {
@@ -109,11 +131,19 @@
 			showCurrentScore();
 		}
 	}
-
+	// score
 	function showCurrentScore() {
-		score.innerHTML = `<p><strong>${gameData.players[0]}
-		${gameData.score[0]}</strong><p>`
-		score.innerHTML += `<p><strong>${gameData.players[1]} 
-		${gameData.score[1]}</strong></p>`
+		instructions.className = 'hidden'
+		instructions.innerHTML = ''
+		score.innerHTML = `<p>${gameData.players[0]}
+		<span class="green">${gameData.score[0]}</span><p>`
+		score.innerHTML += `<p>${gameData.players[1]} 
+		<span class= "green">${gameData.score[1]}</span></p>`
 	}
+	// button sound
+	button.forEach(button => {
+		button.addEventListener("click", () => {
+		  audio.play();
+		});
+	  });
 }());
