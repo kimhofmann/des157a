@@ -1,0 +1,55 @@
+body {
+    font-family: 'Oxanium', cursive;
+    background-image: url(images/code.gif);
+    height: 700px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    line-height: 1.5em;
+}
+
+button { 
+    padding: 10px;
+}
+
+div {
+    padding: 20px;
+    display: flex;
+}
+
+img {
+    padding: 30px;
+}
+
+#gamecontrol, #score {
+    background-color: black;
+}
+
+#score {
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+#game  {
+    background-color: black;
+    font-size: 200px;
+    padding-left: 200px;
+    margin-bottom: 0px;
+}
+
+
+#game img {
+    height: 275px;
+    width: 275px;
+}
+#actions {
+    margin: auto;
+    padding: 0;
+    background-color: black;
+
+}
