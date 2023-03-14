@@ -24,13 +24,6 @@ header img {
     padding-top: 20px;
 }
 
-
-.book1 img {
-    margin: auto;
-    padding-left: 40px;
-    
-}
-
 section {
     display: flex;
     flex-direction: column;
@@ -49,44 +42,50 @@ span {
     font-size: 60px;
 }
 
-.quotes p {
+
+#acotarquote p, #acomafquote p, #acowarquote p, #acofasquote p, #acosfquote p {
     margin: auto;
+    flex-direction: column;
     font-family: 'Tangerine', cursive;
     text-align: center;
     font-size: 40px;
     padding-top: 700px;
     padding-bottom: 700px;
-    padding-left: 80px;
-    padding-right: 80px;
     line-height: 1.4em;
     letter-spacing: .5px;
+    
 
 }
 
-.book1 h2 {
-    font-size: 125px;
+#acotarbook img, #acowarbook img, #acosfbook img {
+    margin: 0;
+    width: 600px;
+    height: 600px;
+}
+
+#acomafbook img, #acofasbook img {
+    margin: 0;
+    width: 600px;
+    height: 600px;
+
+}
+
+
+#acotarbook h2, #acowarbook h2, #acosfbook h2 {
+    font-size: 75px;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    line-height: 1em;
+    line-height: 1.5em;
     padding-left: 40px;
-    margin-top: 0;
-    margin-bottom:0;
-
-    
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-
-.book2 img {
-    margin: auto;
-    padding-right: 40px;
-}
-
-.book2 h2 {
+#acomafbook h2, #acofasbook h2 {
     text-align: right;
     font-family: 'Montserrat', sans-serif;
-    font-size: 125px;
+    font-size: 100px;
     font-weight: lighter;
-    line-height: 1em;
     padding-right: 40px;
     margin-top: 0;
     margin-bottom: 0;
