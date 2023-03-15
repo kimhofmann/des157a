@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amita&family=Bebas+Neue&family=Montserrat:wght@100&family=Tangerine&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles3.css">
+    <script src="script.js" defer></script>
 
 
     <title>an interactive bookshelf v2</title>
@@ -18,7 +19,7 @@
     <header>
         <h1>an interactive bookshelf</h1>
 
-        <img src="images/arrow.png" alt="arrow">
+        <img class= "bounce" src="images/arrow.png" alt="arrow">
     </header>
 
 
@@ -26,27 +27,32 @@
 
     <main>
 
-        <div id="acotarquote" class="">
+        <div class="empty"></div>
+
+        <div id="acotarquote" class="js-scroll">
             <p> <span>"</span>Be glad of your human heart, Feyre. Pity those who feel nothing at all.<span>"</span></p>
-        </div>
+        </div> x
 
-        <div id= "acotarbook" class="">
-            <img id= "acotarimage" src="images/placeholder.jpg" alt="placeholder">
+        <div class="empty"></div>
 
+        <div id= "acotarbook" class="scroll-element js-scroll slide-left">
+            <img  id= "acotarimage" src="images/placeholder.jpg" alt="placeholder">
             <section>
             <h2 >A Court of Thorns and Roses</h2>
             <button class="hvr-shutter-in-vertical"> purchase </button>
             </section>
         </div>
 
+        <div class="empty"></div>
 
-        <div id= "acomafquote" class="">
+        <div id= "acomafquote" class="js-scroll">
             <p> <span>"</span>Where are we going?<span>"</span> Rhy's smile widened into a grin. <br>
                 <span>"</span>To Velaris- The City of Starlight<span>"</span> </p>
         </div>
 
+        <div class="empty"></div>
 
-        <div id= "acomafbook" class="">
+        <div id= "acomafbook" class="scroll-element js-scroll slide-right">
             <section>
             <h2>A Court of Mists and Fury</h2>
             <button class="hvr-shutter-in-vertical"> purchase </button>
@@ -54,13 +60,16 @@
             <img id= "acomafimage" src="images/placeholder.jpg" alt="placeholder">
         </div>
 
+        <div class="empty"></div>
 
-        <div id= "acowarquote" >
+        <div id= "acowarquote" class="js-scroll">
             <p><span>"</span>I have no regrets in my life, but this. That we did not have time. That I did not have time with you, Nesta.<br>
             I will find you in the next world - the next life. And we will have that time. I promise.<span>"</span></p>
         </div>
 
-        <div id= "acowarbook" class="book1">
+        <div class="empty"></div>
+
+        <div id= "acowarbook" class="scroll-element js-scroll slide-left">
             <img id= "acowarimage" src="images/placeholder.jpg" alt="placeholder">
 
             <section>
@@ -69,12 +78,16 @@
             </section>
         </div>
 
-        <div id= "acofasquote" class="quotes">
+        <div class="empty"></div>
+
+        <div id= "acofasquote" class="js-scroll">
             <p>  Stars flickered, sweet darkness sweeping in <br>
             As if we were the only souls in the galaxy. </p>
         </div>
 
-        <div id= "acofasbook" class="book2">
+        <div class="empty"></div>
+
+        <div id= "acofasbook" class="scroll-element js-scroll slide-right">
             <section>
             <h2>A Court of Frost and Starlight</h2>
             <button class="hvr-shutter-in-vertical"> purchase </button>
@@ -82,14 +95,17 @@
             <img id= "acofasimage" src="images/placeholder.jpg" alt="placeholder">
         </div>
 
+        <div class="empty"></div>
 
-        <div id= "acosfquote" class="quotes">
+        <div id= "acosfquote" class="js-scroll">
             <p> Death watched him <br>
             But Death had walked beside him his entire life. So Cassian stroked his thumb along her palm and said, <br>
             <span>"</span>Hello Nes.<span>"</span>
         </div>
 
-        <div id= "acosfbook" class="book1">
+        <div class="empty"></div>
+
+        <div id= "acosfbook" class="scroll-element js-scroll slide-left">
             <img id= "acosfimage" src="images/placeholder.jpg" alt="placeholder">
 
             <section>
