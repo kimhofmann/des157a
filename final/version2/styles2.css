@@ -1,0 +1,92 @@
+div {
+    display: flex;
+    margin: auto;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 200px;
+    padding-left: 30px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header img {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    padding-top: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span {
+    font-size: 60px;
+}
+
+
+#acotarquote p, #acomafquote p, #acowarquote p, #acofasquote p, #acosfquote p {
+    margin: auto;
+    flex-direction: column;
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 700px;
+    padding-bottom: 700px;
+    line-height: 1.4em;
+    letter-spacing: .5px;
+    
+
+}
+
+#acotarbook img, #acowarbook img, #acosfbook img {
+    margin: 0;
+    width: 600px;
+    height: 600px;
+}
+
+#acomafbook img, #acofasbook img {
+    margin: 0;
+    width: 600px;
+    height: 600px;
+
+}
+
+
+#acotarbook h2, #acowarbook h2, #acosfbook h2 {
+    font-size: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    line-height: 1.5em;
+    padding-left: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#acomafbook h2, #acofasbook h2 {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    font-weight: lighter;
+    padding-right: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
