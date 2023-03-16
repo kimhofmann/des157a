@@ -75,13 +75,15 @@ section{
     margin-bottom:0;
 }
 
-#acotarbook section button,#acowarbook section button, #acosfbook section button {
+#acotarbook section a,#acowarbook section a, #acosfbook a {
     padding: 20px;
     padding-left: 30px;
     padding-right: 30px;
     margin: auto;
     border: none;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
 }
 
 
@@ -107,13 +109,15 @@ section{
     margin-bottom: 0;
 }
 
-#acomafbook section button, #acofasbook section button {
+#acomafbook section a, #acofasbook section a {
     padding: 20px;
     padding-left: 30px;
     padding-right: 30px;
     margin: auto;
     border: none;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
 }
 
 
