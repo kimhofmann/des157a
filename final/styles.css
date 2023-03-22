@@ -5,6 +5,10 @@ body {
 
 }
 
+dl, dd {
+    line-height: 2em;
+}
+
 ul {
     list-style-type: none;
     padding-left: 50px;
