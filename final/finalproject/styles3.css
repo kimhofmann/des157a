@@ -53,43 +53,54 @@ span {
 /* left aligned divs */
 
 
-#acotarbook, #acowarbook, #acosfbook {
-    display: flex;
-    position: relative;
-    top:0;
-    left:0;
-}
-section {
-    display: flex;
-    flex-direction: column;
+#acotarbook, #acowarbook, #acosfbook, #acomafbook, #acofasbook {
+  display: flex;
+  position: relative;
+  top:0;
+  left:0;
 }
 
-#acotarimage, #acowarimage, #acosfimage {
-    position: relative;
-    top: 0;
-    left: 0;
-   
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+#acotarimage, #acowarimage, #acosfimage, #acomafimage, #acofasimage {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+
+  z-index: 2;
+  opacity: 1;
+  transition: all 1s ease-in;
+ 
 
 } 
 
-#acotarai, #acowarai, #acosfai {
-  position: absolute;
-  top: 0;
-  left: 0;
+#acotarimage:hover, #acowarimage:hover, #acosfimage:hover, #acomafimage:hover, #acofasimage:hover {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+#acotarai, #acowarai, #acosfai, #acomafai, #acofasai{
+position: relative;
+left: 30px;
+z-index: 1;
 
 }
 
-#acotarbook section h2, #acowarbook section h2, #acosfbook section h2{
+
+#acotarbook section h2, #acowarbook section h2, #acosfbook section h2, #acomafbook section h2, #acofasbook section h2{
     font-size: 125px;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     line-height: 1em;
-    padding-left: 40px;
     margin-top: 0;
     margin-bottom:0;
+    margin-left: 50px;
 }
 
-#acotarbook section a,#acowarbook section a, #acosfbook a {
+#acotarbook section a,#acowarbook section a, #acosfbook a, #acomafbook section a, #acofasbook section a {
     padding: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -101,39 +112,13 @@ section {
 }
 
 
-/* right aligned divs */
-
-
-#acomafbook, #acofasbook {
-    display: flex
+.show {
+  opacity: 100%;
 }
 
-#acomafbook img, #acofasbook img {
-    padding-right: 40px;
+.hidden {
+  opacity: 0%;
 }
-
-#acomafbook section h2, #acofasbook section h2 {
-    text-align: right;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 125px;
-    font-weight: lighter;
-    line-height: 1em;
-    padding-right: 40px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-#acomafbook section a, #acofasbook section a {
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: auto;
-    border: none;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-
-}
-
 
 /* button hover states */
 
